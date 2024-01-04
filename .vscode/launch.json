@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MedalionTheaterApplication<Medalion>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.group6.Medalion.MedalionTheaterApplication",
+            "projectName": "Medalion",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": "-Djava.library.path=C:\\Users\\berek\\Desktop\\Medalion\\sqljdbc_12.4\\enu\\auth\\x64"
+        }
+    ]
+}

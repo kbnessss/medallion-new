@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200;300;700&display=swap"
+          rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        font-family: 'Josefin Sans', sans-serif;
+        background-size: cover;
+        background: url(/images/signupbg.jpg) no-repeat center;
+    }
+    main {
+        display: flex;
+        padding: 6rem 5rem;
+        gap: 5rem;
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background-color: rgba(255, 255, 255, 0.45);
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(15px);
+    }
+    .inputs {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputs h1 {
+        margin-bottom: 2rem;
+    }
+
+
+    input {
+        border: none;
+        margin-bottom: 1rem;
+        font-family: 'Josefin Sans', sans-serif;
+        padding: .5rem 2rem .5rem 3rem;
+    }
+    input:last-of-type {
+        margin-bottom: 3rem;
+    }
+    button {
+        align-self: center;
+        padding: .5rem 2rem;
+        border-radius: 2rem;
+        border: none;
+        background-color: #CAAA08;
+        color: white;
+    }
+
+</style>
+<body>
+    <main>
+        <form class="inputs" onsubmit="registerCustomerHandler(event)">
+            <h1>Sign Up</h1>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Repeat your password">
+            <div class="TOS">
+                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                <label for="agree-term" class="label-agree-term">I agree to all statements in Terms of service</label>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <div>
+            <img src="/images/X.png" alt="">
+        </div>
+    </main>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
